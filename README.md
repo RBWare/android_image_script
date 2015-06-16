@@ -19,10 +19,9 @@ They have binaries for all major distributions
 This is a very simple command line item. Make sure you give it executable permissions by using
 `chmod +x image_script.sh`
 
-- (Optional step)
-- Rename the file from "image_script.sh to "image_script"
+- (Optional step)  Rename the file from "image_script.sh to "image_script"
 `mv image_script.sh image_script`
 
-- Execute the script by supplying the image name, and the image output name to it. This will create a directory, "Images" in the working directory that includes all of the android density sizes with the new file name. 
+Execute the script by supplying the image name, and the image output name to it. This will create a directory, "Images" in the working directory that includes all of the android density sizes with the new file name. 
 - Example:
 `./image_script design_team_svg_file.svg ic_menu_team_photo.png`
