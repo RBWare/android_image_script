@@ -26,6 +26,7 @@ This is a very simple command line tool. Make sure you give it executable permis
 1. Create a [Bash Alias](http://tldp.org/LDP/abs/html/aliases.html) for easy access to the image_script.sh from anywhere on your system:
 `alias gen_images="~/sources/android_image_script/image_script.sh"` (The path to the image_script.sh on your system will likely be different, make sure you update this acordingly). You'll want to add this to your `.bash_rc` or `.bash_profile`, which ever you use, so that it will persist after rebooting your machine.
 2. Execute the script by supplying the image name and the desired output image name. This will create a directory, "Images" in the working directory that includes all of the android density sizes with the new file name. 
+3. Using the options `-h` and `-w` will allow you to specify the width and height. The supplied width and height are for the MDPI and the script will generate all other sizes relative to the width and height supplied for MDPI.
 
 **Example Usage:**
 
