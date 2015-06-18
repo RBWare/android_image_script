@@ -29,4 +29,4 @@ This is a very simple command line tool. Make sure you give it executable permis
 
 **Example Usage:**
 
-`$ gen_images design_team_svg_file.svg ic_menu_team_photo.png`
+`$ gen_images -w 36 -h 36 design_team_svg_file.svg ic_menu_team_photo.png`
