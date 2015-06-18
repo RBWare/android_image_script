@@ -1,27 +1,32 @@
-# android_image_script
-A sweet little script that converts svgs to pngs for all densities for use with Android
+# Android Image Generation Script
+A sweet little script that converts `svg`'s to `png`'s for all densities for use with Android
 
+# Getting Started
 
-# Setup
-### MacPorts (Required for OS X users)
-MacPorts needs to be setup and working to get started. Setup instructions are here
-- https://www.macports.org/install.php
+## Dependencies
 
-### ImageMagick (Required for all)
-For OS X:
-`sudo port install ImageMagick`
+### ImageMagick (http://www.imagemagick.org)
 
-For all other OSes, follow the instructions here:
-- http://www.imagemagick.org/script/index.php
-They have binaries for all major distributions
+**OS X Users:**
 
-# Usage
-This is a very simple command line item. Make sure you give it executable permissions by using
+You can install ImageMagik in a number of different ways. The easiest is to use a package manager like MacPorts or Homebrew.
+
+* Using MacPorts: `$ sudo port install ImageMagick`
+* Using Homebrew: `$ brew install imagemagick`
+
+**All other OS'es:**
+
+* Follow the instructions [here](http://www.imagemagick.org/script/index.php). They have binaries for all major distributions.
+
+## Usage
+
+This is a very simple command line tool. Make sure you give it executable permissions by using
 `chmod +x image_script.sh`
 
-- (Optional step)  Rename the file from "image_script.sh to "image_script"
-`mv image_script.sh image_script`
+1. Create a [Bash Alias](http://tldp.org/LDP/abs/html/aliases.html) for easy access to the image_script.sh from anywhere on your system:
+`alias gen_images="~/sources/android_image_script/image_script.sh"` (The path to the image_script.sh on your system will likely be different, make sure you update this acordingly). You'll want to add this to your `.bash_rc` or `.bash_profile`, which ever you use, so that it will persist after rebooting your machine.
+2. Execute the script by supplying the image name and the desired output image name. This will create a directory, "Images" in the working directory that includes all of the android density sizes with the new file name. 
 
-Execute the script by supplying the image name, and the image output name to it. This will create a directory, "Images" in the working directory that includes all of the android density sizes with the new file name. 
-- Example:
-`./image_script design_team_svg_file.svg ic_menu_team_photo.png`
+**Example Usage:**
+
+`$ gen_images design_team_svg_file.svg ic_menu_team_photo.png`
