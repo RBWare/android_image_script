@@ -23,8 +23,8 @@ done
 shift $((OPTIND-1))
 
 if [ -z "${w}" ] || [ -z "${h}" ]; then
-    w=48
-    h=48
+    w=24
+    h=24
 fi
 
 if [ -z "${1}"] || [ -z "${2}"]; then
