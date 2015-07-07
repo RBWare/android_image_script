@@ -42,7 +42,7 @@ oh=$h
 echo "Converting $1 to $2"
 convert -density 300 -background transparent $1 -resize "${w}"x"${h}" -gravity center -extent "${w}"x"${h}" Images/mdpi/$2 # 2>/dev/null
 w=$[ow + (ow / 2)]
-h=$[oh + (ow / 2)]
+h=$[oh + (oh / 2)]
 convert -density 300 -background transparent $1 -resize "${w}"x"${h}" -gravity center -extent "${w}"x"${h}" Images/hdpi/$2 # 2>/dev/null
 w=$[ow * 2]
 h=$[oh * 2]
