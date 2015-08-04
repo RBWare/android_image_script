@@ -1,5 +1,7 @@
 # Android Image Generation Script
-A sweet little script that converts `svg`'s to `png`'s for all densities for use with Android
+A sweet little script that converts `svg`'s to `png`'s for all densities for use with Android.
+
+Note: SVG files should be using the SVG 1.2 standard, as older versions are not well supported by ImageMagick and may result in errors.
 
 # Getting Started
 
